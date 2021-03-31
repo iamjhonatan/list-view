@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class SignIn extends AppCompatActivity {
     EditText editTextSignIn;
     EditText editTextSignInPassword;
     EditText editTextConfirmPassword;
     TextView textViewPassDifferent;
+    UserRepository userRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +34,17 @@ public class SignIn extends AppCompatActivity {
         String editConfirmPassword = editTextConfirmPassword.getText().toString();
         TextView passDifferent = textViewPassDifferent;
 
-        if (editPassword != editConfirmPassword){
+        if (!editPassword.equals(editConfirmPassword)){
             passDifferent.setVisibility(View.VISIBLE);
         }
         else {
+            User user = new User(editTextName, editPassword);
+            userRepository.getInstance().create(user);
+
             Intent intent = new Intent(SignIn.this,
                     MainActivity.class);
             startActivity(intent);
-
         }
     }
+
 }

@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="onClickAdd"
     tools:context=".Agenda">
 
     <TextView
         android:id="@+id/titleAgenda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agenda"
-        android:textSize="30dp"
+        android:text="@string/agenda"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <ListView
         android:id="@+id/listViewAgenda"
@@ -29,4 +29,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleAgenda"
         app:layout_constraintVertical_bias="0.256" />
+
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8C8C8C"
+        android:backgroundTintMode="add"
+        android:onClick="onClickAdd"
+        android:text="@string/addContact"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewAgenda" />
 </androidx.constraintlayout.widget.ConstraintLayout>

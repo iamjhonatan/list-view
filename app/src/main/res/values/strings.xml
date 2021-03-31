@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">ListView</string>
+    <string name="login">Login</string>
+    <string name="name1">Name</string>
+    <string name="log_in">LOG IN</string>
+    <string name="usu_rio_ou_senha_inv_lidos">Usuário ou senha inválidos!</string>
+    <string name="password">Password</string>
+    <string name="sign_in1">SIGN IN</string>
+    <string name="sign_in2">Sign In</string>
+    <string name="name2">Name</string>
+    <string name="pasword">Pasword</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="as_senhas_n_o_conferem">As senhas não conferem!</string>
+    <string name="name3">Name</string>
+    <string name="type">Type</string>
+    <string name="phone1">Phone</string>
+    <string name="address1">Address</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="add">ADD</string>
+    <string name="agenda">Agenda</string>
+    <string name="addContact">Add</string>
+    <string-array name="type">
+        <item>Casa</item>
+        <item>Trabalho</item>
+        <item>Outro</item>
+    </string-array>
 </resources>
